@@ -17,6 +17,7 @@ import com.example.demo.service.StudentService;
 public class StudentController {
     @Autowired
     StudentService studentService;
+    
     @PostMapping("/postStudent")
     public Student postStud(@RequestBody Student st) {
         return studentService.insertStudent(st);
